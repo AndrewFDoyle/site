@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="../js/navbar.js" defer></script>
+  <title>Andrew Doyle</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- <link 
+  href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" 
+  rel="stylesheet"  type='text/css'> -->
+  <link rel="icon" type="image/x-icon" href="../media/luke-square-comp.jpg">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/dark.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <h1><a href="https://andrewfdoyle.github.io/site/">Andrew Doyle</a></h1>
+      </div>
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbar-links">
+        <ul>
+          <li><a href="https://andrewfdoyle.github.io/site/">Home</a></li>
+          <li><a href="../index.html#projects">Projects</a></li>
+          <li><a href="../index.html#abouts">About</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="page-section">
+      <div class="page-section-header-box">
+        <h2 class="page-section-header"> <div class="construction">[ <i class='fas fa-hard-hat'></i> <i class='fas fa-hammer'></i> Under Construction ]</div> Remote Handling Robotic Arm for Hazardous Environments</h2>
+      </div>
+      <section class="page-section-paragraph">
+        <img class="img-top" src="../media/previews/robot_square.JPG" class="center" width="25%">
+        <h3 class="section-header">Problem</h3>
+          <p>
+            The <a href="https://navalnuclearlab.energy.gov/">Naval Nuclear Lab</a> (NNL) partnered with my team composed of four mechanical engineering students to work on part of their multi-semester project for handling hazardous material safely and reliably. This collaboration with NNL already had work done and planned to continue in future semesters. We had to cut out our part of the problem. We had to choose a section to work on and  our part was manipulate an object at the end of a crowded 2'x2' array. we ended up picking to work on designing an arm segment or "macroscopic manipulator", leaving the "microscropic manipulator" or end effector to another team. Below, the outline of the problem is written and visualized in the pdf.
+          </p>
+          <embed src="../media/page-content/problem-scenario.pdf" width="500" height="375" type="application/pdf" class="embedded">
+            <p>In summary, a robot arm would traverse a randomly cluttered box to get to a valve-like fixture, handle it at the end, and return.</p>
+        <h3 class="section-header">Approach</h3>
+                    <p>
+            The operation of the apparatus made up a narrow slice of what had to be considered in the design. the ability to easily manufacture, maintain and dispose were all given weight. In the end, we picked a multi-joint motor-actuated series of joints. In the train of joints, each member had 2 degrees of freedom. One rotate the yaw (around the linkage axis) and the other would change the pitch which would move the top plate. It can be imagined as a series of lazy suzans combined with an off-axis office chair piston with retraction, except in our case, it would be an electric linear actuator.
+          </p>
+          <div class="image_space">
+            <div class="gallery">
+            <img src="../media/page-content/1st-concept.jpg" alt="early approach">
+          <div class="description">early concept for the arm using ropes in tension to tilt the plates</div>
+            <img src="../media/page-content/2nd-concept.jpg" alt="second iteration">
+          <div class="description">developed version of the same early concept</div>
+            <img src="../media/page-content/arm-concept.jpg" alt="concept visual for arm">
+          <div class="description">conceptual rendering for the arm in the challenge environment</div>
+            </div>
+          </div>
+          <h3 class="section-header">Analysis</h3>
+          <p>To proceed with our design, it is a needed step to make sure it passes tests for strength. To find out how it fails, we just need to take it at the weakest point, or the point with the greatest load and determine if it passes its maximum strength. So we chose to make the arm extend over its supports in the maximum loading range; a total horizontal fully-stretched cantilever. This way, we could model the arm as a cantilever load which reduces the problem to a 1 dimensional beam-in-bending scenario. This simplifies what we have to consider and calculate tremendously all while being generous in loading the part <i>beyond</i> what it will see in the design scenario.</p>
+          <p>Below, I included a brief analysis showing the results mocked up in ANSYS in a static-structural simulation to demonstrate the stresses, strains,and deformation experience by the maximally loaded part assumed to be the plate holding the rest of the arm horiztonal.</p>            
+            <img class="img-top" src="../media/page-content/arm-model.png" class="center" alt="juxtaposed arm with cantilever idealization">
+          <embed src="../media/page-content/Preliminary-FEA-2-23.pdf" width="500" height="375" type="application/pdf" class="embedded">
+          <p></p>
+          <h3 class="section-header">Solution</h3>
+          <p>Despite finishing the semester at the start of the COVID 19 outbreak, we were able to deliver a CAD model, design justification, summary presentation, and a platform for the team the semester after us to start. The lessons I carry after this is that progress is about intermediate failures to adjust course. We got a lot of precious feedback from both the NNL employees, and subject matter experts in robotics in ways that help us understand the context of some of our design decisions. Ultimately, what we delievered reflects a minimum viable start to future iterations if other teams continue the work of our semester. </p>
+      </section>
+    </div>
+  </main>
+  <footer class="smelly-boi">
+    <nav class="smelly-box">
+      <span class="smelly-info">
+        <i class="fa-regular fa-envelope fa-2x"></i>
+        <a href="mailto:andrewfdoyle@proton.me">andrewfdoyle@proton.me</a>
+      </span>
+      <span class="smelly-info">
+        <i class="fa-brands fa-linkedin fa-2x"></i>
+        <a href="https://www.linkedin.com/in/andrewfdoyle/">Linkedin</a>
+      </span>
+    </nav>
+  </footer>
+  <script>
+    console.log(window.matchMedia("prefers-color-scheme: dark").matches);
+  </script>
+</body>
+</html>

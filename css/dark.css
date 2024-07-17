@@ -1,0 +1,23 @@
+@media (prefers-color-scheme: dark){
+
+    body{
+        margin: 0;
+        padding: 0;
+        background-color: var(--dark_bg);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .page-section{
+        margin: 10%;
+        padding: 0%;
+        color: var(--dark_txt);
+    }
+
+    .project-listing ul li a{
+        text-decoration: none;
+        color: var(--dark_txt);
+        text-transform: capitalize;
+    }
+
+}
