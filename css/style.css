@@ -16,7 +16,18 @@
 html{
     height: 100%;
     scroll-behavior: smooth;
-    overflow-x: hidden;
+}
+
+html,body{
+    overflow-x: clip;
+}
+
+a{
+    color: darkcyan;
+}
+
+a:visited{
+    color: darkcyan;
 }
 
 header{
@@ -400,7 +411,7 @@ ol li{
     }
 }
 
-@media (max-width: 300px){
+@media (max-width: 280px){
     .logo{
         display: none;
     }
