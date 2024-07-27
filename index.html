@@ -1,106 +1,84 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="./js/navbar.js" defer></script>
-  <title>Andrew Doyle</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="icon" type="image/x-icon" href="./media/luke-square-comp.jpg">
-  <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/dark.css">
+    <link rev="made" href="mailto:nathan.odle@gmail.com"/>
+    <meta name="description" content="mov_axbx.com"/>
+    <meta name="keywords" content=""/>
+    <title>Building WOPR: A 7x4090 AI Server</title>
+    <style type="text/css">
+        /*<![CDATA[*/
+        * {
+            /* box-sizing: border-box; */
+            font-family: 'Poppins', sans-serif;
+        }
+
+        h2.centered {
+            text-align: center
+        }
+
+        body {
+            font-size: 24px;
+        }
+
+        .header {
+            font-size: 24px;
+        }
+
+        /*]]>*/
+    </style>
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <div class="logo">
-        <h1><a href="https://andrewfdoyle.github.io/site/">Andrew Doyle</a></h1>
-      </div>
-      <a href="#" class="toggle-button">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </a>
-      <div class="navbar-links">
-        <ul>
-          <li><a href="https://andrewfdoyle.github.io/site/">Home</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#about">About</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-  <!-- <site-header></site-header> -->
-  <main>
-    <img class="home-image" src="./media/home.gif" alt="Fill in text description" />
-    <div class="page-section" id="about">
-      <div class="page-section-header-box">
-        <h2 class="page-section-header">about</h2>
-      </div>
-      <section class="page-section-paragraph">
-        <p>
-           Hi, I'm Andrew. I have a B.S. in mechanical engineering. I am a professional with an EIT and I have experience in data analytics, customer relations, design and manufacturing through jobs and passion projects. This website is to showcase some of the things mentioned on my resume, or otherwise thought to be worth sharing.
-        </p>
-        <p>
-          I'm seeking to solve problems with companies who have a stake in their end user's well being. Areas like areas like power generation, manufacturing, automation, health products, logistics, and others are interesting to me.  
-        </p>
-        <p>
-          From an early age, I always loved things visual and mechanical. I loved to draw and play with Legos and my parents thought I would grow up to some kind of artist. However, I didn't really explore what to "be" until my 11th grade year. I discovered Robotics through <a href="https://www.bestrobotics.org/site/">BEST</a> and that gave fuel to the light that had been sparked young. I was inspired by people like <a href="https://www.youtube.com/watch?v=D3rL08J7fDA">Kirk Sorensen</a> who envision creating the energy future of tomorrow, now. Mechanical engineering felt like a natural choice after that.
-        </p>
-        <div class="resume-box">
-          <p class="resume">
-            <a href="media/AndrewDoyle_Resume.pdf" target="_blank">Resume</a>
-          </p>
-        </div>
-      </section>
-    </div>
-    <div class="page-section" id="projects">
-      <div class="page-section-header-box">
-        <h2 class="page-section-header">projects</h2>
-      </div>
-      <section class="page-section-paragraph">
-        <div class="project-listing">
-          <ul>
-            <li>
-              <a class="page-title" href="projects/robot-arm.html">Remote Handling Robotic Arm for Hazardous Environments <img
-                  class="img-preview" loading="lazy" src="./media/previews/robot_square.JPG" width="400"
-                  alt="the robot arm in situ" /></a>
-            </li>
-            <li><a class="page-title" href="projects/lids.html">Food Waste Control - Local Inventory Database System (LIDS) <img
-                  class="img-preview" loading="lazy" src="./media/previews/lamp_square.png" width="400"
-                  alt="home pantry" /></a> </li>
-            <li><a class="page-title" href="projects/rocket-club.html">Rocket Club - Pitt University Student Launch Initiative <img
-                  class="img-preview" loading="lazy" src="./media/previews/rocket_square.jpg" width="400"
-                  alt="rocket in test launch" /></a> </li>
-            <li><a class="page-title" href="projects/home-stuff.html">Home Improvement Projects <img class="img-preview" loading="lazy"
-                  src="./media/previews/homeprojects_square.png" width="400" alt="reheat fire stove & workbench" /></a> </li>
-            <li><a class="page-title" href="projects/misc.html">Hobbies - Hiking, Arts & Crafts, etc.<img class="img-preview"
-                  loading="lazy" src="./media/previews/chimney_square.jpg" width="400" alt="dice tower chimney" />
-              </a> </li>
-          </ul>
-        </div>
-      </section>
-    </div>
-  </main>
-  <!-- <site-footer></site-footer>     -->
-  <footer class="smelly-boi">
-    <nav class="smelly-box">
-      <span class="smelly-info">
-        <i class="fa-regular fa-envelope fa-2x"></i>
-        <a href="mailto:andrewfdoyle@proton.me">andrewfdoyle@proton.me</a>
-      </span>
-      <span class="smelly-info">
-        <i class="fa-brands fa-linkedin fa-2x"></i>
-        <a href="https://www.linkedin.com/in/andrewfdoyle/">Linkedin</a>
-      </span>
-    </nav>
-  </footer>
-  <script>
-    console.log(window.matchMedia("prefers-color-scheme: dark").matches);
-  </script>
-  <!-- <script src="./manageHeaderFooter.js"></script> -->
+
+<img src="./media/home.gif" width="100%">
+
+<table width="100%" cellpadding="0" summary="Main Body Table">
+    <tr>
+        <td width="75px"></td>
+        <td>
+            <h1>Welcome!</h1>
+            <hr/>
+            <h2>About This Site</h2>
+            <p>I like building things. A lot. It doesn't matter what it is: race cars, AI, random machines, I like it
+                all.</p>
+
+            <p>Right now I have the 7x4090 AI server writeup but soon to come are sections on the following projects:</p>
+            <ul>
+                <li>Running @karpathy's llama2.c on crazy hardware like an SGI Indigo2 from 1995</li>
+                <img src="./media/previews/certs_grey_square.png" width="50%">
+                <li>Building a 7xIntel ARC A770 server</li>
+                <li>Rally racecar design/build</li>
+                <li>Sega Dreamcast development</li>
+                <li>...and more</li>
+            </ul>
+
+            <h2>Projects</h2>
+            <ul>
+                <li><a href="wopr/wopr_concept.html">WOPR: A 7x4090 AI Server</a></li>
+                <li><a href="https://github.com/AndrewFDoyle">GitHub (mostly private)</a></li>
+                <li><a href="https://twitter.com/CybearTea">Twitter/X</a></li>
+            </ul>
+
+            <br/>
+            <hr/>
+            <table width="100%" cellpadding="0" summary="Contact Footer">
+                <tr>
+                    <td width="30%">
+                    </td>
+                    <td width="40%" align="center">
+                        <address>Andrew Doyle - <a
+                                href="mailto:andrewfdoyle@proton.me">&lt;andrewfdoyle@proton.me&gt;</a></address>
+                        <a href="https://twitter.com/CybearTea">@CybearTea on X</a></td>
+                    <td width="30%" align="right"></td>
+                </tr>
+            </table>
+
+            <br clear="left"/>
+
+        </td>
+        <td width="75px">
+        </td>
+    </tr>
+</table>
 </body>
 </html>
