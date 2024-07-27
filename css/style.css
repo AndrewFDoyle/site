@@ -6,11 +6,12 @@
 
 :root {
     --dark_bg:rgb(40, 40, 40);
-    --dark_txt:white; /*dark text refers to text on a dark background*/
+    --dark_txt:white; 
     --light_bg:white;
-    --light_txt: rgb(40, 40, 40);
+     --light_txt: rgb(40, 40, 40);
     --site_color:rgb(4, 70, 4);
     --site_color_hover:darkgreen;
+    --link_color: darkcyan;
 }
 
 html{
@@ -95,6 +96,7 @@ body{
     display: flex;
     margin: 0;
     padding: 0;
+    border-radius: 10px;
 }
 
 .navbar-links li{
@@ -107,11 +109,12 @@ body{
     padding-left: 2rem;
     padding-right: 2rem;
     display: block;
+
 }
 
 .navbar-links li a:hover{
     background-color: var(--site_color_hover);
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .toggle-button{
@@ -242,8 +245,7 @@ body{
 }
 
 .project-listing ul li a{
-    text-decoration: none;
-    color: var(--light_txt);
+    color: var(--link_color);
     text-transform: capitalize;
 }
 
@@ -276,8 +278,6 @@ ol li{
 
     display: inline-block;
 
-    /* border: 1px solid hsl(0, 0%, 60%); */
-
     margin: 5px;
 
     width: 200px;
@@ -299,12 +299,6 @@ ol li{
 
 }
 
-/* .gallery:hover{
-
-    border: 1px solid hsl(0, 0%, 20%);
-
-} */
-
 .gallery img{
 
     width: 100%;
@@ -321,6 +315,10 @@ ol li{
     display: flex;
     justify-content: center;
     width: 100%;
+}
+
+hide{
+    display: none;
 }
 
 /* --- media queries ----------------------------------------------- */
@@ -408,6 +406,10 @@ ol li{
         padding-top: 10px;
         padding-bottom: 10px;
         background-color: var(--site_color);
+    }
+    
+    hide{
+        display: none;
     }
 }
 

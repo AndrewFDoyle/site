@@ -15,8 +15,8 @@
     }
 
     .project-listing ul li a{
-        text-decoration: none;
-        color: var(--dark_txt);
+        /* text-decoration: none; */
+        color: var(--link_color);
         text-transform: capitalize;
     }
 
